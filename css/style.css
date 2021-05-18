@@ -1,0 +1,200 @@
+/*---basic style----*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #fffffc;
+    line-height: 1.5;
+    margin: 0;
+}
+
+fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.heading,
+.sub-heading,
+footer {
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 10px;
+}
+
+.sub-heading h2 {
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.sub-heading p {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+hr {
+    background-color: black;
+    width: 96%;
+    margin: 0 auto;
+    height: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thick {
+    height: 8px;
+}
+
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*---header style---*/
+
+.heading {
+    margin: 0;
+    background-color: black;
+    line-height: 75px;
+    width: 100%;
+    padding-top: 4px;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    line-height: 75px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+select {
+    color: lightgray;
+}
+
+
+/*---main styles---*/
+.box {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    border-style: hidden;
+}
+
+
+.box:focus {
+    background-color: gray;
+    transition: all .5s ease-out;
+    outline-color: navy;
+}
+
+::placeholder {
+    text-align: right;
+    padding-right: 15px;
+    color: lightgray;
+}
+
+#zip {
+    width: 30%;
+}
+
+#html,
+#css,
+#javascript,
+#html-format,
+#plain-format {
+    margin-top: 20px;
+}
+
+.text-area {
+    margin-top: 25px;
+}
+
+.text-area ::placeholder {
+    text-align: left;
+    padding-left: 15px;
+}
+
+#other-topics {
+    width: 100%;
+    background-color: #e9ecef;
+    border-style: hidden;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+#button {
+    height: 50px;
+    border-style: hidden;
+    background-color: rgb(34, 206, 206);
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/*---media queries--*/
+
+@media screen and (min-width:768px) {
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box {
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    main,
+    .sub-heading {
+        width: 50%;
+        margin: auto;
+    }
+
+    .thick,
+    .thin {
+        width: 50%;
+        margin: auto;
+    }
+
+    #zip {
+        margin-right: 33%;
+    }
+
+    #button:hover {
+        opacity: 100%;
+        transition: 0.5s;
+    }
+
+}
