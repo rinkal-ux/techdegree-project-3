@@ -106,7 +106,7 @@ select {
 
 
 .box:focus {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.562);
     transition: all .5s ease-out;
     outline-color: navy;
 }
