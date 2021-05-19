@@ -90,6 +90,9 @@ p {
 
 select {
     color: lightgray;
+    background-color: rgb(241, 232, 180);
+    border-color: white;
+    font-style: italic;
 }
 
 
@@ -104,6 +107,12 @@ select {
     border-style: hidden;
 }
 
+input[name="user_email"],
+input[name="user_address"],
+#state {
+    background-color:honeydew;
+}
+
 
 .box:focus {
     background-color: rgba(128, 128, 128, 0.562);
@@ -115,10 +124,11 @@ select {
     text-align: right;
     padding-right: 15px;
     color: lightgray;
+    font-style:italic;
 }
 
 #zip {
-    width: 30%;
+    max-width: 50%;
 }
 
 #html,
@@ -189,6 +199,7 @@ footer {
     }
 
     #zip {
+        max-width:25%;
         margin-right: 33%;
     }
 
