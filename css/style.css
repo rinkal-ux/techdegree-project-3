@@ -113,13 +113,6 @@ input[name="user_address"],
     background-color:honeydew;
 }
 
-
-.box:focus {
-    background-color: rgba(128, 128, 128, 0.562);
-    transition: all .5s ease-out;
-    outline-color: navy;
-}
-
 ::placeholder {
     text-align: right;
     padding-right: 15px;
@@ -148,7 +141,7 @@ input[name="user_address"],
     padding-left: 15px;
 }
 
-#other-topics {
+textarea {
     width: 100%;
     background-color: #e9ecef;
     border-style: hidden;
@@ -165,6 +158,13 @@ input[name="user_address"],
     border-radius: 4px;
     width: 100%;
     font-size: 20px;
+}
+.box:focus,
+#state:focus,
+textarea:focus {
+    background-color: rgba(128, 128, 128, 0.562);
+    transition: all .5s ease-out;
+    outline-color: navy;
 }
 
 footer {
